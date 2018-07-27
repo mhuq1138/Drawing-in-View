@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SizeClassAndAssetCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8F-FX-Y1D" customClass="MyView" customModule="SizeClassAndAssetsCatalog" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="66" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Eld-WY-TVC"/>
+                                    <constraint firstAttribute="height" constant="100" id="IHk-Su-rLq"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Asset Catalog with Custom View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8l-KX-JUh">
+                                <rect key="frame" x="39" y="40" width="297" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assigning Image Set to image property:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cM-v1-5d5">
+                                <rect key="frame" x="36.5" y="176" width="302" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Flowers" translatesAutoresizingMaskIntoConstraints="NO" id="gAJ-mQ-SUL">
+                                <rect key="frame" x="137.5" y="207" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LQb-FJ-84Z"/>
+                                    <constraint firstAttribute="width" constant="100" id="Lsd-20-rvO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Trait Collection Created in Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-7U-oM6">
+                                <rect key="frame" x="41.5" y="317" width="292" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cherry_blossom.png" translatesAutoresizingMaskIntoConstraints="NO" id="HOB-c4-etG">
+                                <rect key="frame" x="137.5" y="343" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="G5Q-0B-kPX"/>
+                                    <constraint firstAttribute="height" constant="100" id="GPW-my-huQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HOB-c4-etG" firstAttribute="top" secondItem="ddd-7U-oM6" secondAttribute="bottom" constant="10" id="0Ei-FX-nd4"/>
+                            <constraint firstItem="b8l-KX-JUh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="1lu-Tj-AI2"/>
+                            <constraint firstItem="ddd-7U-oM6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Sv-Q4-61B"/>
+                            <constraint firstItem="6cM-v1-5d5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Su-iR-T2g"/>
+                            <constraint firstItem="HOB-c4-etG" firstAttribute="top" secondItem="ddd-7U-oM6" secondAttribute="bottom" constant="5" id="A5A-Ys-EbL"/>
+                            <constraint firstItem="gAJ-mQ-SUL" firstAttribute="top" secondItem="6cM-v1-5d5" secondAttribute="bottom" constant="5" id="J6x-kC-xW2"/>
+                            <constraint firstItem="c8F-FX-Y1D" firstAttribute="top" secondItem="b8l-KX-JUh" secondAttribute="bottom" constant="10" id="MLs-su-19W"/>
+                            <constraint firstItem="6cM-v1-5d5" firstAttribute="top" secondItem="c8F-FX-Y1D" secondAttribute="bottom" constant="20" id="ND9-uD-PbV"/>
+                            <constraint firstItem="HOB-c4-etG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RRp-YQ-IyD"/>
+                            <constraint firstItem="c8F-FX-Y1D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SUN-IO-o7y"/>
+                            <constraint firstItem="c8F-FX-Y1D" firstAttribute="top" secondItem="b8l-KX-JUh" secondAttribute="bottom" constant="5" id="UWa-9R-dZB"/>
+                            <constraint firstItem="b8l-KX-JUh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3I-PN-Cnk"/>
+                            <constraint firstItem="ddd-7U-oM6" firstAttribute="top" secondItem="gAJ-mQ-SUL" secondAttribute="bottom" constant="20" id="dOw-Cn-QzF"/>
+                            <constraint firstItem="ddd-7U-oM6" firstAttribute="top" secondItem="gAJ-mQ-SUL" secondAttribute="bottom" constant="10" id="fNj-rG-QwQ"/>
+                            <constraint firstItem="gAJ-mQ-SUL" firstAttribute="top" secondItem="6cM-v1-5d5" secondAttribute="bottom" constant="10" id="hH0-HC-1Re"/>
+                            <constraint firstItem="gAJ-mQ-SUL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jV6-SG-IR7"/>
+                            <constraint firstItem="6cM-v1-5d5" firstAttribute="top" secondItem="c8F-FX-Y1D" secondAttribute="bottom" constant="10" id="odk-AK-fUt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="HOB-c4-etG" id="Zfs-jE-IXv"/>
+                        <outlet property="myView" destination="c8F-FX-Y1D" id="PH6-Dm-eId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Flowers" width="99" height="99"/>
+        <image name="cherry_blossom.png" width="198" height="198"/>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CGPathLinesAndShapes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FjK-HT-4q3" customClass="MyView1" customModule="CGPathLinesAndShapes" customModuleProvider="target">
+                                <rect key="frame" x="20" y="76" width="335" height="160"/>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.96354166669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="DFD-Xi-7P6"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shapes Using CGPath:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6g-02-os4">
+                                <rect key="frame" x="20" y="50" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fE-dl-1BZ" customClass="MyView2" customModule="CGPathLinesAndShapes" customModuleProvider="target">
+                                <rect key="frame" x="20" y="277" width="335" height="160"/>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.96354166669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="T5b-Vj-uqu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lines Using CGMutablePath:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cte-5P-EHn">
+                                <rect key="frame" x="20" y="251" width="219" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTE-El-3Qz" customClass="MyView3" customModule="CGPathLinesAndShapes" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="335" height="160"/>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.96354166669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="so5-gM-hgZ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shapes Using CGMutablePath:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGC-9m-dly">
+                                <rect key="frame" x="20" y="452" width="236" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dGC-9m-dly" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4GN-wv-AFY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fE-dl-1BZ" secondAttribute="trailing" constant="20" id="7rM-3x-HOS"/>
+                            <constraint firstItem="cte-5P-EHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FGZ-7Y-yTP"/>
+                            <constraint firstItem="dTE-El-3Qz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N9j-9Z-mvn"/>
+                            <constraint firstItem="1fE-dl-1BZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PyU-pf-xU1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dTE-El-3Qz" secondAttribute="trailing" constant="20" id="YIu-ys-YQR"/>
+                            <constraint firstItem="1fE-dl-1BZ" firstAttribute="top" secondItem="cte-5P-EHn" secondAttribute="bottom" constant="5" id="beK-fM-Z5P"/>
+                            <constraint firstItem="m6g-02-os4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="fR6-DB-VJw"/>
+                            <constraint firstItem="dTE-El-3Qz" firstAttribute="top" secondItem="dGC-9m-dly" secondAttribute="bottom" constant="5" id="jen-qJ-LLh"/>
+                            <constraint firstItem="dGC-9m-dly" firstAttribute="top" secondItem="1fE-dl-1BZ" secondAttribute="bottom" constant="15" id="l2u-WJ-M0n"/>
+                            <constraint firstItem="m6g-02-os4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l3V-Xe-aAB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FjK-HT-4q3" secondAttribute="trailing" constant="20" id="mZc-x0-fLf"/>
+                            <constraint firstItem="FjK-HT-4q3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="skR-Dk-QID"/>
+                            <constraint firstItem="cte-5P-EHn" firstAttribute="top" secondItem="FjK-HT-4q3" secondAttribute="bottom" constant="15" id="yu7-dz-b2N"/>
+                            <constraint firstItem="FjK-HT-4q3" firstAttribute="top" secondItem="m6g-02-os4" secondAttribute="bottom" constant="5" id="yvl-Vf-Mzd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ResizingImageInCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dvm-c4-ZTo">
+                                <rect key="frame" x="20" y="74" width="335" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5EA-OY-Ltv"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XVH-78-9rG">
+                                <rect key="frame" x="20" y="268" width="335" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4ru-hV-Te2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-wS-QJi">
+                                <rect key="frame" x="20" y="462" width="335" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rJ6-LW-xrw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tile Entire Image:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgr-Df-sc8">
+                                <rect key="frame" x="20" y="50" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tile Half Image:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-8g-qWt">
+                                <rect key="frame" x="20" y="244" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tile A Few Pixels:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cva-ia-rki">
+                                <rect key="frame" x="20" y="438" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="206-8Y-tFO">
+                                <rect key="frame" x="20" y="622" width="119" height="29"/>
+                                <segments>
+                                    <segment title="Tile"/>
+                                    <segment title="Stretch"/>
+                                </segments>
+                                <connections>
+                                    <action selector="chooseResizeMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="0gh-ro-Ngo"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XVH-78-9rG" secondAttribute="trailing" constant="20" id="7g2-FG-CLL"/>
+                            <constraint firstItem="r1q-wS-QJi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Br7-Oj-dDL"/>
+                            <constraint firstItem="XVH-78-9rG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="CUk-FG-vCX"/>
+                            <constraint firstItem="Dvm-c4-ZTo" firstAttribute="top" secondItem="Wgr-Df-sc8" secondAttribute="bottom" constant="3" id="KdR-5f-SkZ"/>
+                            <constraint firstItem="Wgr-Df-sc8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nw2-lg-alh"/>
+                            <constraint firstItem="Wgr-Df-sc8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="Uod-bX-mun"/>
+                            <constraint firstItem="cva-ia-rki" firstAttribute="top" secondItem="XVH-78-9rG" secondAttribute="bottom" constant="20" id="Yzg-yp-rPg"/>
+                            <constraint firstItem="206-8Y-tFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Z9D-nF-7FH"/>
+                            <constraint firstItem="r1q-wS-QJi" firstAttribute="top" secondItem="cva-ia-rki" secondAttribute="bottom" constant="3" id="auQ-o5-4xf"/>
+                            <constraint firstItem="8cC-8g-qWt" firstAttribute="top" secondItem="Dvm-c4-ZTo" secondAttribute="bottom" constant="20" id="bBy-Nh-aCa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dvm-c4-ZTo" secondAttribute="trailing" constant="20" id="bOf-1e-3hG"/>
+                            <constraint firstItem="8cC-8g-qWt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ebj-Qx-Dli"/>
+                            <constraint firstItem="206-8Y-tFO" firstAttribute="top" secondItem="r1q-wS-QJi" secondAttribute="bottom" constant="10" id="esT-oS-gDn"/>
+                            <constraint firstItem="Dvm-c4-ZTo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fdQ-mn-BTy"/>
+                            <constraint firstItem="cva-ia-rki" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="h66-bG-sS7"/>
+                            <constraint firstItem="XVH-78-9rG" firstAttribute="top" secondItem="8cC-8g-qWt" secondAttribute="bottom" constant="3" id="hQ4-j7-PrQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r1q-wS-QJi" secondAttribute="trailing" constant="20" id="iDd-Bi-QwU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewAFewPixels" destination="r1q-wS-QJi" id="hTP-yM-3sJ"/>
+                        <outlet property="imageViewEntire" destination="Dvm-c4-ZTo" id="hBI-y2-xzf"/>
+                        <outlet property="imageViewHalf" destination="XVH-78-9rG" id="Y7y-6V-TEf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
